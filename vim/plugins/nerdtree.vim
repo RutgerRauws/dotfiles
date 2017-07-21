@@ -15,4 +15,6 @@ map <C-n> :NERDTreeToggle<CR>
 " close vim if the only window left open is a NERDTree?
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-
+" make sure it looks nice and disable that old “Press ? for help”.
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
