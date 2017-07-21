@@ -1,9 +1,6 @@
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
 
-alias ls='ls --color=auto'
-# alias tmux='tmux -2'
-
 # all of our zsh files
 typeset -U config_files
 config_files=($ZSH/**/*.zsh)
@@ -28,5 +25,3 @@ then
   source ~/.localrc
 fi
 
-source $ZSH/zsh/async.zsh
-source $ZSH/zsh/pure.zsh
