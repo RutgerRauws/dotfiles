@@ -26,8 +26,9 @@ set expandtab        " expand tabs to spaces
 " wrap lines at 120 chars. 80 is somewaht antiquated with nowadays displays.
 set textwidth=120
 " turn syntax highlighting on
-"set t_Co=256
-"syntax on
+" set t_Co=256
+filetype plugin indent on
+syntax on
 
 " turn line numbers on
 set number
@@ -77,7 +78,7 @@ if &diff
   map <F9> :new<CR>:read !svn diff<CR>:set syntax=diff buftype=nofile<CR>gg
 else
   " spell settings
-  :setlocal spell spelllang=en
+  " :setlocal spell spelllang=en
   " set the spellfile - folders must exist
   set spellfile=~/.vim/spellfile.add
   map <M-Down> ]s
