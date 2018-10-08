@@ -36,6 +36,9 @@ set showmatch
 " intelligent comments
 set comments=sl:/*,mb:\ *,elx:\ */
 
+" Enable clipboard
+set clipboard+=unnamedplus
+
 " Install OmniCppComplete like described on http://vim.wikia.com/wiki/C++_code_completion
 " This offers intelligent C++ completion when typing ‘.’ ‘->’ or <C-o>
 " Load standard tag files
