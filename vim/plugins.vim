@@ -5,7 +5,10 @@ call plug#begin('~/.vim/plugged')
 :so ~/.dotfiles/vim/plugins/nerdtree.vim 
 
 " Load CPP highlighter
-Plug 'octol/vim-cpp-enhanced-highlight'
+" Plug 'octol/vim-cpp-enhanced-highlight'
+
+" Load syntax highlighting
+Plug 'sheerun/vim-polyglot'
 
 " End vim-plug loading
 call plug#end()
