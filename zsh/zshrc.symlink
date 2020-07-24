@@ -24,3 +24,5 @@ if [[ -a ~/.localrc ]]
 then
   source ~/.localrc
 fi
+
+alias domum="ssh rutger@192.168.178.2" 
